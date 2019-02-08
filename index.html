@@ -1,0 +1,15 @@
+---
+---
+
+<head>
+  <title>Available data files</title>
+</head>
+
+<body>
+  <h1>SO PySM data files</h1>
+  <ul>
+    {% for url in site.static_files %}
+        <li><a href="{{ site.baseurl | escape }}{{ url.path | escape }}">{{ url.path | escape }}</a> </li>
+    {% endfor %}
+  </ul>
+</body>
